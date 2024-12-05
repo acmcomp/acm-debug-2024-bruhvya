@@ -1,4 +1,6 @@
 # My Portfolio Website
+API KEY made into api secret and relative path changed
+
 
 The Dev Bootcamp series was amazing! Learnt a lot of new stuff!
 
