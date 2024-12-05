@@ -4,14 +4,9 @@ app = Flask(__name__)
 
 
 class ACM_Debugging_Competition:
-    @app.route("/bye")
+    @app.route("/")
     def index():
         return "hi"
-
-    @app.route("/hi")
-    def bye():
-        return "bye"
-
 
 if __name__ == "__main__":
     app.run(debug=False)
