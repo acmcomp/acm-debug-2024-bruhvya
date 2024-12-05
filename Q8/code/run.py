@@ -35,7 +35,7 @@ class Feedback(db.Model):
 def home():
     category = 'inspirational' # Choose one of the categories from the API docs
     api_url = 'https://api.api-ninjas.com/v1/quotes?category={}'.format(category)
-    response = requests.get(api_url, headers={'X-Api-Key': API_KEY})
+    response = requests.get(api_url, headers={'X-Api-Key': API_SECRET})
     if response.status_code == requests.codes.ok:
         resp = response.json()
         quote_of_the_day = resp[0]['quote']
