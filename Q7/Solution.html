@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <title>Toggle Visibility</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <button id="toggle-btn">Toggle Paragraph</button>
@@ -11,11 +15,7 @@
   <script>
     document.getElementById("toggle-btn").addEventListener("click", function() {
       const paragraph = document.getElementById("text");
-      if (paragraph.display === "none") {
-        paragraph.display = "block";
-      } else {
-        paragraph.display = "none";
-      }
+      paragraph.classList.toggle("hidden");
     });
   </script>
 </body>
